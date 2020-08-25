@@ -12,10 +12,24 @@
 <%  var formElement = Model.FormElement; 
     var labelText = Model.Label;
 %>
+<style>
+
+    #employer_inputs label {
+        display: inline-block;
+        width: 250px;
+        padding-left: 40px;
+    }
+
+    #employer_inputs input {
+        display: inline-block;
+        width: 200px;
+    }
+
+</style>
 
 <% using(Html.BeginElement(Model, new { @class="form-group FormTextbox FormTextbox--Textarea" + Model.GetValidationCssClasses(), data_f_type="textbox", data_f_modifier="textarea" })) { %>
     <label for="<%: formElement.Guid %>" class="Form__Element__Caption"><%: labelText %></label>
-    <textarea name="<%: formElement.ElementName %>" id="<%: formElement.Guid %>" class="FormTextbox__Input form-control"
+    <textarea name="<%: formElement.ElementName %>" id="<%: formElement.Guid %>" 
         placeholder="<%: Model.PlaceHolder %>" data-f-label="<%: labelText %>" data-f-datainput
         <%= Model.AttributesString %> ><%: Model.GetDefaultValue() %></textarea>
     <%= Html.ValidationMessageFor(Model) %>

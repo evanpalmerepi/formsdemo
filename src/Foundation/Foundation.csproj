@@ -245,6 +245,9 @@
     <Reference Include="Episerver.Marketing.Connector.Forms, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Marketing.Automation.Forms.2.3.0\lib\net461\Episerver.Marketing.Connector.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="Episerver.Marketing.Connector.Salesforce, Version=4.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPiServer.MarketingAutomationIntegration.Salesforce.4.2.1\lib\net461\Episerver.Marketing.Connector.Salesforce.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.Marketing.KPI, Version=2.5.3.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Marketing.KPI.2.5.3\lib\net461\EPiServer.Marketing.KPI.dll</HintPath>
     </Reference>
@@ -259,6 +262,12 @@
     </Reference>
     <Reference Include="EPiServer.Marketing.Testing.Web, Version=2.6.3.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.Marketing.Testing.2.6.3\lib\net461\EPiServer.Marketing.Testing.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Packaging, Version=3.4.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPiServer.Packaging.3.4.0\lib\net461\EPiServer.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Packaging.CmdAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPiServer.Packaging.3.4.0\lib\net461\EPiServer.Packaging.CmdAPI.dll</HintPath>
     </Reference>
     <Reference Include="EPiServer.PdfPreview, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.PdfPreview.1.0.0\lib\net461\EPiServer.PdfPreview.dll</HintPath>
@@ -293,6 +302,12 @@
     <Reference Include="EPiServer.Web.WebControls, Version=11.17.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.CMS.AspNet.11.17.0\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
     <Reference Include="Geta.EpiCategories, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Geta.EpiCategories.1.2.11\lib\net461\Geta.EpiCategories.dll</HintPath>
     </Reference>
@@ -302,8 +317,8 @@
     <Reference Include="Geta.SEO.Sitemaps, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Geta.SEO.Sitemaps.3.1.2\lib\net461\Geta.SEO.Sitemaps.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.10.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.10.0\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="HtmlDiff, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\htmldiff.net.1.4.0\lib\net45\HtmlDiff.dll</HintPath>
@@ -450,8 +465,8 @@
     <Reference Include="PowerSlice, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\PowerSlice.4.0.1\lib\net461\PowerSlice.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=106.2.2.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\RestSharp.106.2.2\lib\net452\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=106.11.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="Schema.NET, Version=7.1.0.0, Culture=neutral, PublicKeyToken=fc5550082a9c642c, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Schema.NET.7.1.0\lib\net472\Schema.NET.dll</HintPath>
@@ -477,6 +492,14 @@
     </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.Packaging.4.5.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
     <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
       <Private>True</Private>
@@ -669,12 +692,28 @@
     <Compile Include="Infrastructure\OpenGraph\OpenGraphFoundationPageData.cs" />
     <Compile Include="Infrastructure\OpenGraph\OpenGraphHomePage.cs" />
     <Compile Include="Infrastructure\OpenGraph\OpenGraphLocationItemPage.cs" />
+    <Compile Include="Poc\FormElements\CalculationElementBlock.cs" />
+    <Compile Include="Poc\FormElements\CalculationElementBlock.ascx.cs">
+      <DependentUpon>CalculationElementBlock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Poc\FormElements\SmartgroupFormHelper.cs" />
+    <Compile Include="Poc\FormElements\EpiserverHtmlHelper.cs" />
+    <Compile Include="Poc\FormElements\Models\SmartgroupModels.cs" />
+    <Compile Include="Poc\FormElements\SmartgroupCalculatorHelper.cs" />
+    <Compile Include="Poc\FormElements\EachBenefitElementBlock.ascx.cs">
+      <DependentUpon>EachBenefitElementBlock.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Poc\FormElements\EachBenefitElementBlock.cs" />
+    <Compile Include="Poc\FormElements\SubmissionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="TestElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\scss\templates\media\" />
+    <Folder Include="Features\TestElementBlock\" />
     <Folder Include="Views\Login\" />
+    <Folder Include="Views\TestElementBlock\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icons\cms\blocks\CMS-icon-block-30.png" />
@@ -943,6 +982,9 @@
     <Content Include="Features\Shared\Foundation\ElementBlocks\ChoiceElementBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\FormContainerBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\SelectionElementBlock.ascx" />
+    <Content Include="Poc\FormElements\CalculationElementBlock.ascx" />
+    <Content Include="Poc\FormElements\ChoiceElementBlock.ascx" />
+    <Content Include="Poc\FormElements\EachBenefitElementBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\SubmitButtonElementBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\TextareaElementBlock.ascx" />
     <Content Include="Features\Shared\Foundation\ElementBlocks\TextboxElementBlock.ascx" />
@@ -1009,6 +1051,9 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\DateTimeRangeElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\RecaptchaElementBlock.ascx" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\Shared\EditorTemplates\FormModel.ascx" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector.Salesforce\EmbeddedLangFiles\EPiServer.Marketing.Connector.Salesforce_EN.xml" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector.Salesforce\Views\Admin\Settings.aspx" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector.Salesforce\Views\Admin\SettingsControl.ascx" />
     <Content Include="modules\_protected\Episerver.Marketing.Connector\ClientResources\Profile\Profile.js" />
     <Content Include="modules\_protected\Episerver.Marketing.Connector\Views\Admin\Settings.aspx" />
     <Content Include="modules\_protected\Foundation.Cms\ClientResources\css\bulkupdate.css" />
@@ -1019,6 +1064,7 @@
     <Content Include="modules\_protected\VisualCompareMode\EpiServerOverridenLibs\CustomCompareCommandProvider.js" />
     <Content Include="modules\_protected\VisualCompareMode\EpiServerOverridenLibs\customWidgetSwitcher.js" />
     <Content Include="NotFound.aspx" />
+    <Content Include="Poc\FormElements\TextboxElementBlock.ascx" />
     <Content Include="resources\languagefiles\Episerver.Marketing.Automation.Forms_EN.xml" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\AdvancedTask\Index.ascx" />
@@ -1351,6 +1397,7 @@
     <Content Include="modules\_protected\episerver-labs-content-manager\episerver-labs-content-manager.zip" />
     <Content Include="modules\_protected\episerver-labs-grid-view\web.config" />
     <Content Include="modules\_protected\episerver-labs-grid-view\episerver-labs-grid-view.zip" />
+    <Content Include="modules\_protected\Episerver.Marketing.Connector.Salesforce\module.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

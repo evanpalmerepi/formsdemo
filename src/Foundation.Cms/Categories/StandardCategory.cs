@@ -1,7 +1,6 @@
 ﻿using EPiServer.DataAnnotations;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
-using Geta.EpiCategories;
 using System.ComponentModel.DataAnnotations;
 
 namespace Foundation.Cms.Categories
@@ -37,5 +36,10 @@ namespace Foundation.Cms.Categories
         public virtual string Scripts { get; set; }
 
         #endregion
+    }
+
+    [ContentType]
+    public class CategoryData : Geta.EpiCategories.CategoryData
+    {
     }
 }

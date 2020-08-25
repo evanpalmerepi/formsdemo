@@ -1,12 +1,12 @@
 @echo off
-cd /d %~dp0
-openfiles > NUL 2>&1
-if %ERRORLEVEL% NEQ 0 (
-	set "errorMessage=Build.cmd script must be run in an elevated (admin) command prompt"
-	goto error
+
+
+
+
+cd /d c:\sites\Smartgroup\
 )
 
-mode con:cols=120 lines=5000
+
 set ROOTPATH=%cd%
 set ROOTDIR=%cd%
 set SOURCEPATH=%ROOTPATH%\src
@@ -56,7 +56,7 @@ echo Your foundation domain name is: %FOUNDATIONDOMAIN%
 echo Your LICENSE path is: %LICENSEPATH%
 echo Your SQL server name is: %SQLSERVER%
 echo Your SQLCMD command is: sqlcmd -S %SQLSERVER% %ADDITIONAL_SQLCMD%
-timeout 15
+
 
 set cms_db=%APPNAME%.Cms
 set user=%APPNAME%User
@@ -288,4 +288,4 @@ echo echo ######################################################################
 echo pause >> resetup.cmd
 echo setup %APPNAME% %FOUNDATIONDOMAIN% %LICENSEPATH% %SQLSERVER% %ADDITIONAL_SQLCMD% >> resetup.cmd
 
-pause
+

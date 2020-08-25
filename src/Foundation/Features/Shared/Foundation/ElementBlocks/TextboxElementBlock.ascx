@@ -14,11 +14,28 @@
     var labelText = Model.Label;
 %>
 
-<% using(Html.BeginElement(Model, new { @class="FormTextbox form-group" + Model.GetValidationCssClasses(), data_f_type="textbox" })) { %>
-    <label for="<%: formElement.Guid %>" class="Form__Element__Caption"><%: labelText %></label>
-    <input name="<%: formElement.ElementName %>" id="<%: formElement.Guid %>" type="text" class="FormTextbox__Input textbox"
-        placeholder="<%: Model.PlaceHolder %>" value="<%: Model.GetDefaultValue() %>" <%: Html.Raw(Model.AttributesString) %> data-f-datainput />
+<style>
 
-    <%= Html.ValidationMessageFor(Model) %>
-    <%= Model.RenderDataList() %>
-<% } %>
+    #employer_inputs label {
+        display: inline-block;
+        width: 250px;
+        padding-left: 40px;
+    }
+
+    #employer_inputs input {
+        display: inline-block;
+        width: 200px;
+    }
+
+</style>
+
+<div id="employer_inputs">
+    <% using(Html.BeginElement(Model, new { @class="FormTextbox form-group" + Model.GetValidationCssClasses(), data_f_type="textbox" })) { %>
+        <label for="<%: formElement.Guid %>"><%: labelText %></label>
+        <input name="<%: formElement.ElementName %>" id="<%: formElement.Guid %>" type="text" 
+            placeholder="<%: Model.PlaceHolder %>" value="<%: Model.GetDefaultValue() %>" <%: Html.Raw(Model.AttributesString) %> data-f-datainput />
+
+        <%= Html.ValidationMessageFor(Model) %>
+        <%= Model.RenderDataList() %>
+    <% } %>
+</div>

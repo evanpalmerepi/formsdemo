@@ -18,7 +18,7 @@
 <%  
     var _formConfig = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<EPiServer.Forms.Configuration.IEPiServerFormsImplementationConfig>();
 %>
-
+<div id="smartgroup_form">
 
 <% if (EPiServer.Editor.PageEditing.PageIsInEditMode) { %>
 <link rel="stylesheet" type="text/css" data-f-resource="EPiServerForms.css" href='<%: ModuleHelper.ToClientResource(typeof(FormsModule), "ClientResources/ViewMode/EPiServerForms.css")%>' />
@@ -130,31 +130,29 @@
                 string nextButtonDisableState = (currentStepIndex == currentDisplayStepCount - 1) || !ViewBag.Submittable ? "disabled" : "";
         %>
         <% if (Model.ShowNavigationBar) { %>
-        <nav role="navigation" class="Form__NavigationBar" data-f-type="navigationbar" data-f-element-nondata>
-            <button type="submit" name="submit" value="<%: SubmitButtonType.PreviousStep.ToString() %>" class="Form__NavigationBar__Action FormExcludeDataRebind btnPrev" 
-                    <%: prevButtonDisableState %> data-f-navigation-previous>
-                <%: Html.Translate("/episerver/forms/viewmode/stepnavigation/previous")%></button>
-
-            <%
-            // calculate the progress style on-server-side
-            var currentDisplayStepIndex = currentStepIndex + 1;
-            var progressWidth = (100 * currentDisplayStepIndex / currentDisplayStepCount) + "%";
-            %>
-            <div class="Form__NavigationBar__ProgressBar">
-                <div class="Form__NavigationBar__ProgressBar--Progress" style="width: <%: progressWidth %>" data-f-navigation-progress></div>
-                <div class="Form__NavigationBar__ProgressBar--Text">
-                    <span class="Form__NavigationBar__ProgressBar__ProgressLabel"><%: Html.Translate("/episerver/forms/viewmode/stepnavigation/page")%></span> 
-                    <span class="Form__NavigationBar__ProgressBar__CurrentStep" data-f-navigation-currentStep><%:currentDisplayStepIndex %></span>/
-                    <span class="Form__NavigationBar__ProgressBar__StepsCount" data-f-navigation-stepcount><%:currentDisplayStepCount %></span>
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 50px">
+            <nav role="navigation" class="Form__NavigationBar" data-f-type="navigationbar" data-f-element-nondata>
+                <button type="submit" name="submit" value="<%: SubmitButtonType.PreviousStep.ToString() %>" class="Form__NavigationBar__Action FormExcludeDataRebind btnPrev" 
+                        <%: prevButtonDisableState %> data-f-navigation-previous>
+                    <%: Html.Translate("/episerver/forms/viewmode/stepnavigation/previous")%></button>
+                <%
+                    // calculate the progress style on-server-side
+                    var currentDisplayStepIndex = currentStepIndex + 1;
+                    var progressWidth = (100 * currentDisplayStepIndex / currentDisplayStepCount) + "%";
+                %>
+                <div class="Form__NavigationBar__ProgressBar">
+                    <div class="Form__NavigationBar__ProgressBar--Progress" style="width: <%: progressWidth %>" data-f-navigation-progress></div>
+                    <div class="Form__NavigationBar__ProgressBar--Text">
+                        <span class="Form__NavigationBar__ProgressBar__ProgressLabel"><%: Html.Translate("/episerver/forms/viewmode/stepnavigation/page")%></span> 
+                        <span class="Form__NavigationBar__ProgressBar__CurrentStep" data-f-navigation-currentStep><%:currentDisplayStepIndex %></span>/
+                        <span class="Form__NavigationBar__ProgressBar__StepsCount" data-f-navigation-stepcount><%:currentDisplayStepCount %></span>
+                    </div>
                 </div>
-            </div>
-            
-
-
-            <button type="submit" name="submit" value="<%: SubmitButtonType.NextStep.ToString() %>" class="Form__NavigationBar__Action FormExcludeDataRebind btnNext" 
-                    <%: nextButtonDisableState %> data-f-navigation-next >
-                <%: Html.Translate("/episerver/forms/viewmode/stepnavigation/next")%></button>
-        </nav>
+                <button type="submit" name="submit" value="<%: SubmitButtonType.NextStep.ToString() %>" class="Form__NavigationBar__Action FormExcludeDataRebind btnNext" 
+                        <%: nextButtonDisableState %> data-f-navigation-next >
+                    <%: Html.Translate("/episerver/forms/viewmode/stepnavigation/next")%></button>
+            </nav>
+        </div>
         <% } %>
 
         <% } // endof if %>
@@ -168,3 +166,5 @@
 <% } %>
 
 <% } %>
+
+</div>

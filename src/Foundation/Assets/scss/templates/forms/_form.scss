@@ -25,8 +25,23 @@
             border: 0;
         }
 
+        legend {
+            font-size: .875rem;
+            width: 250px;
+            display: inline-block;
+        }
+
+        fieldset label {
+            width: 250px;
+            font-size: .875rem;
+            display: inline-block;
+        }
+
         .Form__Element .Form__Element__Caption {
+            width: 250px;
+            font-size: .875rem;
             margin-top: .5rem;
+            display: inline-block;
         }
 
         .FormSelection .select {
@@ -51,7 +66,7 @@
             font-size: $text-font-size;
             font-weight: 400;
             border: 1px solid #ddd;
-            width: 100% !important;
+            width: 200px;
         }
 
         .FormCaptcha__Image {
